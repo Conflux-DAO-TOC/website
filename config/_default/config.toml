@@ -1,4 +1,4 @@
-baseURL = "https://top.io/"
+baseURL = "https://confluxdao.netlify.app"
 paginate = 100
 defaultContentLanguage = "zh"
 enableEmoji = true
@@ -19,8 +19,7 @@ disableAliases = true
 pluralizeListTitles = false
 
 # googleAnalytics = ""
-[social]
-twitter = "GoHugoIO"
+# [social]
 
 
 # MARKDOWN
