@@ -1,0 +1,49 @@
+
+    <!-- Team section Start -->
+    <section id="team" class="section">
+        <div class="container">
+          <!-- Start Row -->
+          <div class="row">
+            <div class="col-lg-12 text-center">
+                  <h2 class="section-title">委员会成员</h2>
+            </div>
+
+          </div>
+          <!-- End Row -->
+          <!-- Start Row -->
+          <div class="row">
+            {{ range $.Site.Data.members}}
+              {{if .name}}
+              <div class="col-lg-3 col-md-6 col-xs-12 pt-2">
+                <div class="single-team">
+                  <div class="team-thumb">
+                    <img data-src="https://github.com/{{.github}}.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="team-details">
+                  <div class="team-social-icons">
+                      <ul class="social-list">
+                        <li><a href="https://github.com/{{.github}}"><i class="lni lni-github"></i></a></li>
+                        <li><a href="{{.link |safeURL}}"><i class="lni lni-link"></i></a></li>
+
+                      </ul>
+                    </div>
+                    <div class="team-inner text-center">
+                      <h5 class="team-title">{{.name}}</h5>
+                      <p class="text-truncate">{{.desc}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{end}}
+              {{end}}
+
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center pt-4">
+                <a class="btn btn-success btn-lg" href="https://github.com/Conflux-DAO-TOC/toc/issues">想加入？</a>
+          </div>
+          </div>
+          <!-- End Row -->
+        </div>
+      </section>
+      <!-- Team section End -->

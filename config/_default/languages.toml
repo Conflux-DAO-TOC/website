@@ -1,0 +1,11 @@
+[en]
+    contentDir = "content/en"
+    baseURL= "https://example.com"
+    languageName = "English"
+    weight = 1
+
+[zh]
+    contentDir = "content/zh"
+    baseURL= "https://example.com/zh"
+    languageName = "中文"
+    weight = 2

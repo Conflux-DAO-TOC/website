@@ -1,0 +1,76 @@
+
+# Chinese menus
+
+[[home]]
+  name = "主体"
+  weight = 1
+  identifier = "memeber"
+  url = "/#services"
+[[home]]
+  name = "使命"
+  weight = 2
+  identifier = "features"
+  url = "/#features"
+
+[[home]]
+  name = "成员"
+  weight = 3
+  identifier = "team"
+  url = "/#showcase"
+
+[[home]]
+  name = "动态"
+  weight = 4
+  identifier = "blog"
+  url = "/#blog"
+
+[[home]]
+  name = "关于"
+  weight = 5
+  identifier = "about"
+  url = "/about/toc.html"
+
+[[home]]
+  name = "关于"
+  weight = 5
+  identifier = "about"
+  url = "/about/toc.html"
+
+
+[[home]]
+  name = "GitHub"
+  weight = 6
+  identifier = "github"
+  post = "external"
+  url = "https://github.com/Conflux-DAO-TOC/website"
+
+
+
+
+[[global]]
+  name = "动态"
+  weight = 1
+  identifier = "blog"
+  url = "/blog.html"
+
+
+[[global]]
+  name = "委员会"
+  weight = 3
+  identifier = "team"
+  url = "/about/team.html"
+
+
+[[global]]
+  name = "关于"
+  weight = 5
+  identifier = "about"
+  url = "/about/toc.html"
+
+
+[[global]]
+  name = "GitHub"
+  weight = 200
+  identifier = "github"
+  post = "external"
+  url = "https://github.com/Conflux-DAO-TOC/website"

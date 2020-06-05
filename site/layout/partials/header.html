@@ -1,0 +1,62 @@
+<div class="overlay">
+  <span></span>
+  <span></span>
+</div>
+<nav class="navbar navbar-expand-md bg-inverse {{if .IsHome}}fixed-top{{end}} scrolling-navbar menu-bg">
+  <div class="container">
+    <a href="{{.Site.BaseURL}}" class="navbar-brand"><img src="{{"img/logo.png" | relLangURL}}" alt=""></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="lni lni-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        {{if .IsHome}}
+        {{range .Site.Menus.home}}
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+        </li>
+      {{end}}
+        {{else}}
+        {{range .Site.Menus.global}}
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+          </li>
+        {{end}}
+        {{end}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{i18n "language"}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {{ range $.Site.Home.AllTranslations }}
+            <a class="dropdown-item"  href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+{{if .IsHome}}
+<div class="container">
+  <div class="row space-100">
+    <div class="col-lg-6 col-md-12 col-xs-12">
+      <div class="contents">
+        <h2 class="head-title">Conflux DAO TOC</h2>
+        <p>是基于世界级开源公链Conflux基石上建立的社区技术管理机构。<br>它接受和监督Conflux技术社区的所有项目，并负责推动达成中立的共识。</p>
+        <div class="header-button">
+          <a href="{{"/about/toc.html" | relLangURL}}" class="btn btn-border-filled">深入了解</a>
+          <a href="#contact" class="btn btn-border page-scroll">加入我们</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+      <div class="intro-img">
+        <img src="{{"img/intro.png" | relLangURL}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}

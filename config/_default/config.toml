@@ -1,0 +1,45 @@
+baseURL = "https://top.io/"
+paginate = 100
+defaultContentLanguage = "zh"
+enableEmoji = true
+# Set the unicode character used for the "return" link in page footnotes.
+footnotereturnlinkcontents = "↩"
+languageCode = "zh-cn"
+title = "Conflux社区技术委员会"
+anchor = "smart"
+contentDir="content"
+dataDir="config/data"
+layoutDir="site/layout"
+staticDir="site/static"
+themesDir="site/themes"
+publishdir ="public"
+uglyURLs ="true"
+metaDataFormat ="YAML"
+disableAliases = true
+pluralizeListTitles = false
+
+# googleAnalytics = ""
+[social]
+twitter = "GoHugoIO"
+
+
+# MARKDOWN
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+[blackfriday]
+    plainIDAnchors = true
+    # See https://github.com/gohugoio/hugo/issues/2424
+    hrefTargetBlank = false
+    angledQuotes = false
+    latexDashes = true
+
+[imaging]
+    # See https://github.com/disintegration/imaging
+    # CatmullRom is a sharp bicubic filter which should fit the docs site well with its many screenshots.
+    # Note that you can also set this per image processing.
+    resampleFilter = "CatmullRom"
+    # Default JPEG quality setting. Default is 75.
+    quality = 75
+
+[permalinks]
+    about = "/about/:filename"
+	blog = "/blog/:year/:filename"

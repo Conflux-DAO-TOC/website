@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    {{- block "title" . -}}
+      {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+    {{- end -}}
+  </title>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header id="home" class="hero-area">
+    {{ partial "header.html" . }}
+  </header>
+
+  <main>
+  {{ block "content" . }}{{ end }}
+</main>
+    <footer id="footer" class="footer">
+      {{ partial "footer.html" . }}
+    </footer>
+
+
+  </div>
+
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+  {{ partial "scripts.html" . }}
+</body>
+</html>
