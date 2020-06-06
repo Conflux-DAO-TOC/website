@@ -99,7 +99,7 @@
           </div>
           <div class="feature-info float-left">
             <h4>生态项目孵化</h4>
-            <p>开发围绕Conflux的基础设施，<br>筛选社区自发起的dapp项目。</p>
+            <p class="text-wrap ">开发围绕Conflux的基础设施，<br>筛选社区自发起的dapp项目。</p>
           </div>
         </div>
         <!-- End Fetatures -->
@@ -131,7 +131,7 @@
           </div>
           <div class="feature-info float-left">
             <h4>DAO自治</h4>
-            <p>在碰到出现发展决策意见不统一时，<br>使用 DAO 自主投票决策。</p>
+            <p class="text-wrap ">在碰到出现发展决策意见不统一时，<br>使用 DAO 自主投票决策。</p>
           </div>
         </div>
         <!-- End Fetatures -->
@@ -147,7 +147,7 @@
           </div>
           <div class="feature-info float-left">
             <h4>孵化创新项目</h4>
-            <p>孵化更多来自社区的创新项目，助力生态发展。</p>
+            <p class="text-wrap ">孵化更多来自社区的创新项目，<br>助力生态发展。</p>
           </div>
         </div>
         <!-- End Fetatures -->
@@ -206,7 +206,7 @@
               <!-- Start Col -->
               <div class="item">
                 <div class="screenshot-thumb" style="width:260px;height: 260px;">
-                  <img  data-src="https://github.com/{{.github}}.png"  class="rounded-circle" style="width:260px;height: 260px;" class="img-fluid" alt="">
+                  <img data-src="https://github.com/{{.github}}.png"  class="rounded-circle" style="width:260px;height: 260px;" class="img-fluid" alt="">
                   <div class="hover-content text-center rounded-circle" >
                     <div class="fancy-table">
                       <div class="table-cell">
@@ -260,19 +260,14 @@
       <div class="col-lg-4 col-md-6 col-xs-12 blog-item ">
         <!-- Blog Item Starts -->
         <div class="blog-item-wrapper">
-          <div class="blog-item-img">
-            <!-- <a href="single-post.html">
-                <img src="img/blog/01.jpg" class="img-fluid" alt="">
-              </a> -->
-          </div>
           <div class="blog-item-text">
             <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
             <p>{{.Summary}}</p>
-            <a href="" class="read-more">5 Min read</a>
+            <a href="" class="read-more">{{i18n "more"}}</a>
           </div>
-          <div class="author">
-            <span class="date float-right"><i class="lni lni-calendar"></i><a
-                href="{{.Permalink}}">{{.Date.Format "2006-01-02"}}</a></span>
+          <div class="author mb-1">
+            <span class="date float-right"><i class="lni lni-calendar"></i>
+              <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}}</a></span>
           </div>
         </div>
         <!-- Blog Item Wrapper Ends-->
@@ -313,7 +308,7 @@
       </div>
       <!-- End Col -->
       <!-- Start Col -->
-      <div class="col-lg-1">
+      <div class="col-lg-1 d-none d-md-block d-lg-block">
 
       </div>
       <!-- End Col -->
