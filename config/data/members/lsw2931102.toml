@@ -1,0 +1,10 @@
+# 昵称
+name="Funny"
+# 头像，如果不填写将使用 github 头像
+avatar=""
+# github id，是你github 主页地址。如 https://github.com/ysqi 的 ID 为 ysqi
+github="Lsw931102"
+# 简单描述个人信息
+desc="DAPP developer"
+# 点击头像或昵称将会连接的网址
+link="https://github.com/Conflux-DAO-TOC/toc/issues/11"

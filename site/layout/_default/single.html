@@ -1,0 +1,24 @@
+{{ define "content" -}}
+
+<article class="post">
+<div class="myoverlay d-sm-none d-md-block"><span></span></div>
+  <div class="container">
+    <div class="row pt-70">
+      <div class="col-12">
+        <h1>{{.Title}}</h1>
+      </div>
+      <div class="col-12">
+        <article class="content">
+            {{.Content}}
+            {{ $this:= .}}
+            {{range .Params.partials}}
+               {{partial . $this}}
+            {{end}}
+          </article>
+        </article>
+      </div>
+    </div>
+  </div>
+</article>
+{{- end }}
+

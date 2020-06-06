@@ -1,0 +1,7 @@
+/public
+/dev
+/.grunt
+/node_modules
+/resources
+.DS_Store
+/package-lock.json

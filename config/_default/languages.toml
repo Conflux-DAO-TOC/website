@@ -1,0 +1,11 @@
+[en]
+    contentDir = "content/en"
+    baseURL= "https://confluxdao.netlify.app/"
+    languageName = "English"
+    weight = 1
+
+[zh]
+    contentDir = "content/zh"
+    baseURL= "https://confluxdao.netlify.app/zh"
+    languageName = "中文"
+    weight = 2

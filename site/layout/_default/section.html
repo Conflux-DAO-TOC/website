@@ -1,0 +1,35 @@
+{{ define "title" }}{{ i18n "archive" }} - {{ .Site.Title }}{{ end }}
+
+
+{{ define "content"}}
+
+<div class="myoverlay"><span></span></div>
+<article class="post " id="blog">
+  <div class="myoverlay"><span></span></div>
+  <div class="container">
+    <div class="row">
+      {{range .Data.Pages}}
+      <div class="col-lg-4 col-md-6 col-xs-12 blog-item pt-5 mt-5 pb-5">
+        <!-- Blog Item Starts -->
+        <div class="blog-item-wrapper">
+          <div class="blog-item-img">
+            <!-- <a href="single-post.html">
+                <img src="img/blog/01.jpg" class="img-fluid" alt="">
+              </a> -->
+          </div>
+          <div class="blog-item-text">
+            <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
+            <p>{{.Summary}}</p>
+          </div>
+          <div class="author">
+            <span class="date float-right"><i class="lni lni-calendar"></i><a
+                href="{{.Permalink}}">{{.Date.Format "2006-01-02"}}</a></span>
+          </div>
+        </div>
+        <!-- Blog Item Wrapper Ends-->
+      </div>
+      {{end}}
+    </div>
+  </div>
+</article>
+{{ end }}
